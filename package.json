@@ -1,0 +1,20 @@
+{
+  "name": "intelligent-learning-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered adaptive learning platform with cognitive load tracking",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && nodemon src/server.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd server && npm test && cd ../client && npm test"
+  },
+  "keywords": ["ai", "education", "learning", "cognitive-load", "youtube", "assessment"],
+  "author": "ILA Development Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
